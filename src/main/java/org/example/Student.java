@@ -1,3 +1,5 @@
+package org.example;
+
 public class Student implements Comparable<Student>{
     private String name;
     private int age;
@@ -19,11 +21,12 @@ public class Student implements Comparable<Student>{
 
     @Override
     public int compareTo(Student student) {
+        //降序排序
         if (this.grade>student.grade){
-            return 1;
+            return -1;
         }
         else if (this.grade<student.grade){
-            return -1;
+            return 1;
         }else {
             return this.age- student.age;
         }
