@@ -26,12 +26,14 @@ public class Autoclose implements IMessage {
         System.out.println("关闭消息连接通道");
     }
 }
-class Message{
+class Message {
     private String msg;
-    public Message(String msg){
-        this.msg=msg;
+
+    public Message(String msg) {
+        this.msg = msg;
     }
-    public String getMsg(){
+
+    public String getMsg() {
         return this.msg;
     }
 }
